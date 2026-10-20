@@ -53,6 +53,8 @@ See the [Cost Rationale](../cost_rationale.md) page for a full explanation of So
 | [`ledger_context_read_in_loop`](ledger_context_read_in_loop.md) | `warn` | reads a ledger context value inside a loop when it cannot change during the invocation |
 | [`redundant_require_auth`](redundant_require_auth.md) | `warn` | require_auth called more than once on the same address in a single function body |
 | [`large_constant_array`](large_constant_array.md) | `warn` | embedding a large constant array in contract code |
+| [`collection_len_in_loop_condition`](collection_len_in_loop_condition.md) | `warn` | collection len() called in a loop condition without mutation |
+| [`cross_contract_result_discarded`](cross_contract_result_discarded.md) | `warn` | cross-contract call result discarded |
 
 {% hint style="info" %}
 Severities can be adjusted per-workspace via `budget.toml` — see the [Integration Guide](../integration.md).
