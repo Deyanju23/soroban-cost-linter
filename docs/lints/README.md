@@ -41,6 +41,8 @@ See the [Cost Rationale](../cost_rationale.md) page for a full explanation of So
 | [`unbounded_recursion`](unbounded_recursion.md) | `warn` | unbounded recursion driven by caller-supplied input |
 | [`ledger_context_read_in_loop`](ledger_context_read_in_loop.md) | `warn` | reads a ledger context value inside a loop when it cannot change during the invocation |
 | [`redundant_require_auth`](redundant_require_auth.md) | `warn` | require_auth called more than once on the same address in a single function body |
+| [`collection_len_in_loop_condition`](collection_len_in_loop_condition.md) | `warn` | collection len() called in a loop condition without mutation |
+| [`cross_contract_result_discarded`](cross_contract_result_discarded.md) | `warn` | cross-contract call result discarded |
 
 ## Memory
 
@@ -53,8 +55,6 @@ See the [Cost Rationale](../cost_rationale.md) page for a full explanation of So
 | [`vec_where_slice_could_be_used`](vec_where_slice_could_be_used.md) | `warn` | soroban_sdk::Vec passed by value where a native Rust slice would suffice |
 | [`soroban_inefficient_bytes_concat`](soroban_inefficient_bytes_concat.md) | `warn` | inefficient Bytes concatenation inside a loop |
 | [`large_constant_array`](large_constant_array.md) | `warn` | embedding a large constant array in contract code |
-| [`collection_len_in_loop_condition`](collection_len_in_loop_condition.md) | `warn` | collection len() called in a loop condition without mutation |
-| [`cross_contract_result_discarded`](cross_contract_result_discarded.md) | `warn` | cross-contract call result discarded |
 
 ## Host
 
